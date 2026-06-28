@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growth Transformation Advisor Homepage</title>
+  <meta name="description" content="Warm, personal homepage for a Growth & Transformation Advisor and former CEO helping leaders build aligned, healthy organizations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --text-3xl: clamp(2.75rem, 1.25rem + 4vw, 5.25rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f7f6f2; --color-surface: #f9f8f5; --color-surface-2: #fbfbf9; --color-surface-offset: #f1ede7; --color-border: rgba(40,37,29,0.12); --color-divider: #dbd7cf;
+      --color-text: #28251d; --color-text-muted: #66635d; --color-text-faint: #9a978f; --color-text-inverse: #f7f6f2; --color-primary: #0d676b; --color-primary-hover: #0a5256; --color-primary-highlight: rgba(13,103,107,0.10);
+      --shadow-sm: 0 1px 2px rgba(32,25,17,0.05); --shadow-md: 0 12px 32px rgba(32,25,17,0.08);
+      --radius-sm: 0.375rem; --radius-md: 0.625rem; --radius-lg: 0.95rem; --radius-xl: 1.35rem; --radius-full: 9999px; --content-default: 1120px;
+      --font-display: 'Instrument Serif', Georgia, serif; --font-body: 'General Sans', Inter, sans-serif; --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1d1b19; --color-surface-2: #23211f; --color-surface-offset: #2a2724; --color-border: rgba(255,255,255,0.12); --color-divider: #353230;
+      --color-text: #d6d2cb; --color-text-muted: #a39f98; --color-text-faint: #7a766f; --color-text-inverse: #171614; --color-primary: #66a7af; --color-primary-hover: #83bcc3; --color-primary-highlight: rgba(102,167,175,0.13);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.18); --shadow-md: 0 16px 42px rgba(0,0,0,0.28);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility} body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;color:var(--color-text);background:radial-gradient(circle at top left,var(--color-primary-highlight),transparent 32%),var(--color-bg)} img,svg{display:block;max-width:100%} a{color:inherit;text-decoration:none} button{font:inherit;color:inherit;border:0;background:none;cursor:pointer} :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .skip-link{position:absolute;left:var(--space-4);top:-3rem;background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);z-index:100}.skip-link:focus{top:var(--space-4)}
+    .container{width:min(calc(100% - 2rem),var(--content-default));margin-inline:auto}.eyebrow{display:inline-flex;align-items:center;gap:var(--space-2);padding:.45rem .8rem;border-radius:var(--radius-full);border:1px solid var(--color-border);background:color-mix(in srgb,var(--color-surface-2) 82%,transparent);color:var(--color-text-muted);font-size:var(--text-xs);letter-spacing:.08em;text-transform:uppercase}.eyebrow::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--color-primary);box-shadow:0 0 0 6px color-mix(in srgb,var(--color-primary) 14%,transparent)}
+    .site-header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--color-bg) 84%,transparent);border-bottom:1px solid color-mix(in srgb,var(--color-divider) 80%,transparent)} .header-inner{min-height:4.75rem;display:flex;align-items:center;justify-content:space-between;gap:var(--space-4)} .brand{display:inline-flex;align-items:center;gap:var(--space-3);font-size:var(--text-sm);font-weight:600;letter-spacing:.01em}.brand-mark{width:2.25rem;height:2.25rem;color:var(--color-primary)} .nav-links{display:flex;align-items:center;gap:var(--space-5);color:var(--color-text-muted);font-size:var(--text-sm)} .header-actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle{width:2.75rem;height:2.75rem;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--color-border);border-radius:var(--radius-full);background:var(--color-surface);box-shadow:var(--shadow-sm)} .theme-toggle:hover{background:var(--color-surface-offset)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:2.9rem;padding:.85rem 1.15rem;border-radius:var(--radius-full);border:1px solid transparent;font-size:var(--text-sm);font-weight:600}.btn-primary{color:var(--color-text-inverse);background:var(--color-primary);box-shadow:var(--shadow-sm)}.btn-primary:hover{background:var(--color-primary-hover)}.btn-secondary{border-color:var(--color-border);background:var(--color-surface)}.btn-secondary:hover{background:var(--color-surface-offset)}
+    .hero{padding:clamp(var(--space-12),10vw,var(--space-24)) 0 var(--space-20)} .hero-grid{display:grid;gap:var(--space-10);align-items:end}.hero-copy{display:grid;gap:var(--space-6);max-width:46rem} h1,h2{font-family:var(--font-display);font-weight:400;letter-spacing:-.03em;line-height:.97} h1{font-size:var(--text-3xl);max-width:14ch} h2{font-size:var(--text-2xl);max-width:12ch}.hero-copy p{color:var(--color-text-muted);max-width:42rem;font-size:var(--text-lg)} .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+    .hero-note{display:grid;gap:var(--space-3);padding:var(--space-6);background:linear-gradient(180deg,color-mix(in srgb,var(--color-surface-2) 88%,transparent),var(--color-surface));border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);position:relative;overflow:hidden}.hero-note::after{content:"";position:absolute;inset:auto -10% -30% auto;width:14rem;height:14rem;border-radius:50%;background:color-mix(in srgb,var(--color-primary) 10%,transparent);filter:blur(12px)} .note-label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-faint)} .hero-note blockquote{font-family:var(--font-display);font-size:clamp(1.5rem,1.15rem + 1.5vw,2.4rem);line-height:1.08;max-width:13ch}.hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3);margin-top:var(--space-2)} .stat{padding-top:var(--space-4);border-top:1px solid var(--color-divider)} .stat strong{display:block;font-size:var(--text-xl);font-weight:600;line-height:1;margin-bottom:var(--space-2);font-variant-numeric:tabular-nums}.stat span{color:var(--color-text-muted);font-size:var(--text-sm)}
+    section{padding:clamp(var(--space-10),8vw,var(--space-20)) 0}.section-head{display:grid;gap:var(--space-4);margin-bottom:var(--space-8)}.section-head p{color:var(--color-text-muted);max-width:44rem}
+    .proof-grid,.offer-grid,.signal-grid{display:grid;gap:var(--space-4)} .proof-grid{grid-template-columns:repeat(12,minmax(0,1fr))}.proof-card,.offer-card,.signal-card,.cta-panel{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)} .proof-card{padding:var(--space-6);display:grid;gap:var(--space-3);min-height:13rem}.proof-card:nth-child(1){grid-column:span 5}.proof-card:nth-child(2){grid-column:span 4}.proof-card:nth-child(3){grid-column:span 3}.proof-card:nth-child(4){grid-column:span 7}.proof-card:nth-child(5){grid-column:span 5}.metric{font-size:var(--text-2xl);font-weight:600;line-height:1;font-variant-numeric:tabular-nums}.proof-card h3,.offer-card h3,.signal-card h3,.cta-panel h2{font-size:var(--text-lg);line-height:1.15;letter-spacing:-.02em}.proof-card p,.offer-card p,.signal-card p,.cta-panel p{color:var(--color-text-muted)}
+    .offer-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.offer-card{padding:var(--space-6);display:grid;gap:var(--space-4);min-height:17rem}.offer-card ul{list-style:none;display:grid;gap:var(--space-3);color:var(--color-text-muted)}.offer-card li{position:relative;padding-left:1rem}.offer-card li::before{content:"";position:absolute;left:0;top:.7rem;width:.42rem;height:.42rem;border-radius:50%;background:var(--color-primary)}
+    .signal-grid{grid-template-columns:1.1fr .9fr;align-items:stretch}.signal-card{padding:var(--space-6);display:grid;gap:var(--space-4)} .quote{font-family:var(--font-display);font-size:clamp(1.5rem,1.15rem + 1.2vw,2.2rem);line-height:1.08;max-width:15ch}.book-chip{display:inline-flex;align-items:center;gap:var(--space-2);width:fit-content;padding:.55rem .8rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-sm);font-weight:600}
+    .cta-panel{padding:clamp(var(--space-6),4vw,var(--space-10));display:grid;gap:var(--space-5);background:linear-gradient(135deg,color-mix(in srgb,var(--color-primary) 8%,var(--color-surface)),var(--color-surface))}.cta-panel p{max-width:46rem}.cta-actions{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+    .site-footer{padding:var(--space-8) 0 var(--space-12);color:var(--color-text-muted);font-size:var(--text-sm)} .footer-inner{display:flex;justify-content:space-between;gap:var(--space-4);padding-top:var(--space-5);border-top:1px solid var(--color-divider)}
+    @media (max-width:1024px){.nav-links{display:none}.hero-grid,.signal-grid,.offer-grid{grid-template-columns:1fr}.proof-card:nth-child(n){grid-column:span 12}} @media (max-width:720px){.header-inner{min-height:4.25rem}.header-actions .btn-secondary{display:none}.hero{padding-top:var(--space-10)}.hero-copy p{font-size:var(--text-base)}.hero-stats{grid-template-columns:1fr}.proof-grid{display:grid;grid-template-columns:1fr}.proof-card,.offer-card,.signal-card,.cta-panel,.hero-note{padding:var(--space-5)}.footer-inner{flex-direction:column}} @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition-duration:.01ms !important;animation-duration:.01ms !important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Homepage">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M13 45.5L31.8 17L50.5 45.5" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 45.5L32 33.5L40 45.5" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M32 17V9" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span>Chris Meroff</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#proof">Experience</a>
+        <a href="#work">How I help</a>
+        <a href="#insight">Perspective</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-secondary" href="#insight">See approach</a>
+        <a class="btn btn-primary" href="mailto:chris@chrismeroff.consulting">Book a conversation</a>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Former CEO · Advisor · Author</span>
+          <h1>I help leaders build organizations where people, purpose, and performance stay connected.</h1>
+          <p>For me, this work has always been personal. After years of building and leading organizations of my own, I’ve come to believe that the health of a company is shaped less by slogans and more by whether people feel clear, trusted, and connected to what they are building together.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:chris@chrismeroff.consulting">Start a conversation</a>
+            <a class="btn btn-secondary" href="#proof">See experience</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Advisor summary">
+          <span class="note-label">What I believe</span>
+          <blockquote>Some of the most important leadership lessons do not arrive in boardrooms. They arrive in the quiet moments when you realize a team has learned how to carry the work, and each other, without everything depending on you.</blockquote>
+
+        </aside>
+      </div>
+    </section>
+    <section id="proof">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Experience</span>
+          <h2>This perspective was shaped in the middle of real leadership, not outside of it.</h2>
+          <p>I’ve lived the strain of growth, the loneliness that can come with leadership, and the responsibility of building something that asks a great deal from other people’s lives. That experience changed the questions I ask and the kind of support I now try to offer.</p>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card"><div class="metric">4 → 120</div><h3>I built MSB Consulting from a small startup into a 120-person organization.</h3><p>As the company grew, I saw again and again that sustainable success is never just about strategy. It depends on whether people understand where they are going, feel ownership in the work, and trust the culture carrying them there.</p></article>
+          <article class="proof-card"><div class="metric">$24M</div><h3>I helped grow the business to $24M in annual revenue before acquisition.</h3><p>There were seasons when the work was intensely practical, sales, strategy, profitability, execution, and seasons when the deeper challenge was helping the organization stay aligned as complexity increased.</p></article>
+          <article class="proof-card"><div class="metric">2023</div><h3>I led the company through a successful $70M sale.</h3><p>That chapter mattered because of the outcome, but even more because of what it taught me about stewardship, readiness, and what it means to prepare an organization for change without losing its center.</p></article>
+          <article class="proof-card"><div class="metric">Former CEO</div><h3>Today, I work with organizations in seasons of growth, transition, and reflection.</h3><p>Today, I work with leaders who need space to step back, see more clearly, and make decisions that strengthen both performance and the human health of the organization.</p></article>
+          <article class="proof-card"><div class="metric">Author</div><h3>I also write about the human side of healthy performance.</h3><p><em>Align</em> and <em>Empathy Revolution</em> grew out of that same journey. They reflect my belief that people do their best work when expectations are clear, relationships are strong, and leadership is rooted in empathy rather than control.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How I help</span>
+          <h2>The places where these conversations usually begin.</h2>
+          <p>No two organizations carry the same story, but I’ve noticed that leaders usually reach out at a few familiar moments.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="offer-card"><h3>When growth starts to cost more internally than anyone expected</h3><p>The business may still look healthy from the outside, but inside, leaders can feel the strain of misalignment, confusion, or drift.</p><ul><li>Clarify what matters most right now.</li><li>Reconnect leadership around strategy and execution.</li><li>Create steadier rhythms for follow-through and accountability.</li></ul></article>
+          <article class="offer-card"><h3>When transition reveals what has been fragile all along</h3><p>A leadership change, ownership shift, or new pressure in the market often reveals where clarity and trust were thinner than they seemed.</p><ul><li>Offer grounded outside perspective during important transitions.</li><li>Reduce the drag created by unclear expectations or misalignment.</li><li>Help people move from reactivity back to intention.</li></ul></article>
+          <article class="offer-card"><h3>When people are working hard but something deeper feels off</h3><p>Sometimes the problem is not visible on a dashboard. It shows up in energy, in relationships, in communication, and in the quiet erosion of ownership.</p><ul><li>Surface the friction points quietly draining energy and trust.</li><li>Translate values into everyday leadership behavior.</li><li>Create the conditions for healthier engagement and ownership.</li></ul></article>
+        </div>
+      </div>
+    </section>
+    <section id="insight">
+      <div class="container signal-grid">
+        <article class="signal-card"><span class="eyebrow">A guiding idea</span><p class="quote">Alignment is what allows a company to grow without losing the clarity, trust, and shared sense of purpose that made it strong in the first place.</p><p>That belief has taken shape over many years. I’ve watched organizations become more resilient when leadership becomes less performative, communication becomes more honest, and people begin to understand that alignment is not a soft idea. It is what allows good work to endure.</p></article>
+        <article class="signal-card"><div style="display:flex;flex-wrap:wrap;gap:.6rem;"><a class="book-chip" href="https://www.amazon.com/dp/B0CG7DBYFJ/" target="_blank" rel="noopener noreferrer">Author of <em>Empathy Revolution</em></a><a class="book-chip" href="https://www.amazon.com/s?k=Align+Four+Simple+Steps+for+Leaders+to+Create+Employee+Fulfillment+Chris+Meroff" target="_blank" rel="noopener noreferrer">Author of <em>Align</em></a></div><h3>A set of ideas that came from experience before they ever became books.</h3><p><a href="https://www.amazon.com/s?k=Align+Four+Simple+Steps+for+Leaders+to+Create+Employee+Fulfillment+Chris+Meroff" target="_blank" rel="noopener noreferrer"><em>Align, 4 Simple Steps to Create Employee Fulfillment</em></a> came from years of trying to understand why some teams flourish while others quietly lose themselves. It puts language to the patterns I kept seeing in leadership, culture, and fulfillment at work.</p><p><a href="https://www.amazon.com/dp/B0CG7DBYFJ/" target="_blank" rel="noopener noreferrer"><em>Empathy Revolution</em></a> carries that reflection further, inviting leaders to build cultures that are both high-performing and deeply human, not as competing goals, but as inseparable ones.</p></article>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="cta-panel">
+          <span class="eyebrow">Next step</span>
+          <h2>If any part of this feels familiar, I’d be glad to have a conversation.</h2>
+          <p>I work best with leaders who value honest reflection, practical wisdom, and the kind of outside perspective that helps them see their organization, and their own leadership, a little more clearly.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:chris@chrismeroff.consulting?subject=Advisory%20conversation">Book a conversation</a>
+            <a class="btn btn-secondary" href="mailto:chris@chrismeroff.consulting?subject=Request%20more%20information">Request more information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Chris Meroff · Former CEO · Advisor · Author</p>
+      <p>A warm, personal homepage for consulting, leadership advisory, and organizational alignment work.</p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const root = document.documentElement;
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      const setIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+      };
+      setIcon();
+      toggle.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        setIcon();
+      });
+    })();
+  </script>
+</body>
+</html>
